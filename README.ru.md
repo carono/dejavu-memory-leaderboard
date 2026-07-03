@@ -27,8 +27,8 @@ composer install
 mysql -u root -p -e "CREATE DATABASE dejavu_leaderboard CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 
 # 3. Настроить доступ к БД
-cp config/db-local.php.example config/db-local.php
-# отредактируйте config/db-local.php — укажите логин / пароль
+cp config/db.php.example config/db.php
+# отредактируйте config/db.php — укажите хост / логин / пароль
 
 # 4. Применить миграции
 php yii migrate
@@ -36,11 +36,9 @@ php yii migrate
 
 ### Настройка базы данных
 
-Параметры подключения берутся в таком порядке:
-
-1. Переменные окружения `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`.
-2. `config/db-local.php` (в `.gitignore`) — переопределяет значения выше.
-3. Значения по умолчанию (`config/db.php`): хост `mysql`, порт `3306`, база `dejavu_leaderboard`.
+`config/db.php` хранит параметры подключения и **исключён из git** (не
+коммитится). Скопируйте `config/db.php.example` и настройте `dsn`, `username`
+и `password` под своё окружение (база `dejavu_leaderboard`).
 
 ### Локальный запуск
 

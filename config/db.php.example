@@ -1,0 +1,11 @@
+<?php
+
+// Copy this file to config/db.php and fill in real credentials.
+// config/db.php is gitignored and never committed.
+return [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=127.0.0.1;dbname=dejavu_leaderboard;port=3306',
+    'username' => 'dejavu',
+    'password' => 'change-me',
+    'charset' => 'utf8mb4',
+];

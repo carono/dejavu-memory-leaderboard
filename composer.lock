@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64b2e902cd224897b193895242a3195e",
+    "content-hash": "884326bfb6f9bd018668d1a17ff1b702",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -80,6 +80,540 @@
             "license": [
                 "MIT"
             ]
+        },
+        {
+            "name": "carono/codegen",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/codegen.git",
+                "reference": "7d6a7b77f222e61b5337bc55b3411c81a9f3bea5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/codegen/zipball/7d6a7b77f222e61b5337bc55b3411c81a9f3bea5",
+                "reference": "7d6a7b77f222e61b5337bc55b3411c81a9f3bea5",
+                "shasum": ""
+            },
+            "require": {
+                "nette/php-generator": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "carono\\codegen\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksandr Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "http://carono.ru"
+                }
+            ],
+            "description": "PHP class generation",
+            "support": {
+                "issues": "https://github.com/carono/codegen/issues",
+                "source": "https://github.com/carono/codegen/tree/0.1.1"
+            },
+            "time": "2022-10-05T09:06:30+00:00"
+        },
+        {
+            "name": "carono/yii2-attribute-behavior",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/carono-yii2-attribute-behavior.git",
+                "reference": "5ebcfe554352a63dd4a6ef1ea1bb036e6f95e751"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/carono-yii2-attribute-behavior/zipball/5ebcfe554352a63dd4a6ef1ea1bb036e6f95e751",
+                "reference": "5ebcfe554352a63dd4a6ef1ea1bb036e6f95e751",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || 8.*",
+                "yiisoft/yii2": "^2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "carono\\yii2\\behaviors\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "https://carono.ru"
+                }
+            ],
+            "description": "Yii2 behavior that triggers custom events when specific model attributes change. Provides flexible attribute-level event handling for ActiveRecord models with onChange{Attribute} and onInsert{Attribute} method patterns.",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/carono/carono-yii2-attribute-behavior/issues",
+                "source": "https://github.com/carono/carono-yii2-attribute-behavior/tree/1.0.1"
+            },
+            "time": "2025-09-28T12:34:46+00:00"
+        },
+        {
+            "name": "carono/yii2-basic-env",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/yii2-basic-env.git",
+                "reference": "64288ad9101bbb8d640bca3b6e7d9c1a4d008200"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/yii2-basic-env/zipball/64288ad9101bbb8d640bca3b6e7d9c1a4d008200",
+                "reference": "64288ad9101bbb8d640bca3b6e7d9c1a4d008200",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "carono\\env\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "carono\\env\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "carono",
+                    "email": "info@carono.ru"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/carono/yii2-basic-env/issues",
+                "source": "https://github.com/carono/yii2-basic-env/tree/master"
+            },
+            "time": "2017-07-07T21:52:50+00:00"
+        },
+        {
+            "name": "carono/yii2-bower-asset",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/yii2-bower-asset.git",
+                "reference": "7a7ce21fb8c3928509e70e6d3617ad37b949e30f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/yii2-bower-asset/zipball/7a7ce21fb8c3928509e70e6d3617ad37b949e30f",
+                "reference": "7a7ce21fb8c3928509e70e6d3617ad37b949e30f",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "carono\\yii2bower\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksandr Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "http://carono.ru"
+                }
+            ],
+            "keywords": [
+                "assets",
+                "bower",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/carono/yii2-bower-asset/issues",
+                "source": "https://github.com/carono/yii2-bower-asset/tree/1.1.4"
+            },
+            "time": "2024-05-04T16:18:27+00:00"
+        },
+        {
+            "name": "carono/yii2-file-upload",
+            "version": "1.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/yii2-file-upload.git",
+                "reference": "2a4469b7511f972f6cb9973a02295cab05a7fd1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/yii2-file-upload/zipball/2a4469b7511f972f6cb9973a02295cab05a7fd1f",
+                "reference": "2a4469b7511f972f6cb9973a02295cab05a7fd1f",
+                "shasum": ""
+            },
+            "require": {
+                "carono/yii2-migrate": "@stable",
+                "yiisoft/yii2": "^2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "carono\\yii2file\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksandr Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "http://carono.ru"
+                }
+            ],
+            "description": "File storage table",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/carono/yii2-file-upload/issues",
+                "source": "https://github.com/carono/yii2-file-upload/tree/1.2.7"
+            },
+            "time": "2026-05-14T09:36:49+00:00"
+        },
+        {
+            "name": "carono/yii2-giix",
+            "version": "0.4.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/yii2-giix.git",
+                "reference": "57d0fe50274186145c5aa01923dafff47d974a8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/yii2-giix/zipball/57d0fe50274186145c5aa01923dafff47d974a8c",
+                "reference": "57d0fe50274186145c5aa01923dafff47d974a8c",
+                "shasum": ""
+            },
+            "require": {
+                "carono/codegen": "~0.1",
+                "nette/php-generator": "@stable",
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "carono\\giix\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "carono\\giix\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "carno",
+                    "email": "spamer2000@list.ru"
+                }
+            ],
+            "description": "Yii2 gii generator based on schmunk42 yii2-giiant",
+            "support": {
+                "issues": "https://github.com/carono/yii2-giix/issues",
+                "source": "https://github.com/carono/yii2-giix/tree/0.4.9"
+            },
+            "time": "2026-04-17T08:54:42+00:00"
+        },
+        {
+            "name": "carono/yii2-migrate",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/yii2-migrate.git",
+                "reference": "9c80bbe926eb4af16fc029bba9d55f0c5736145b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/yii2-migrate/zipball/9c80bbe926eb4af16fc029bba9d55f0c5736145b",
+                "reference": "9c80bbe926eb4af16fc029bba9d55f0c5736145b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0",
+                "yiisoft/yii2": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "carono\\yii2migrate\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksandr Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "http://carono.ru"
+                }
+            ],
+            "description": "Trait to help create databases in migrations for Yii2",
+            "support": {
+                "issues": "https://github.com/carono/yii2-migrate/issues",
+                "source": "https://github.com/carono/yii2-migrate/tree/1.1.6"
+            },
+            "time": "2024-05-27T11:41:24+00:00"
+        },
+        {
+            "name": "carono/yii2-pivot",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/yii2-pivot.git",
+                "reference": "0f876411e967734427169d50603e353ffc6ebdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/yii2-pivot/zipball/0f876411e967734427169d50603e353ffc6ebdb8",
+                "reference": "0f876411e967734427169d50603e353ffc6ebdb8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "yiisoft/yii2": "^2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.89.1",
+                "maglnet/composer-require-checker": "^4.7.1",
+                "phpunit/phpunit": "^10.5.46",
+                "rector/rector": "^2.0.16",
+                "roave/infection-static-analysis-plugin": "^1.35",
+                "spatie/phpunit-watcher": "^1.24",
+                "vimeo/psalm": "^5.26.1 || ^6.10.3"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "carono\\yii2pivot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "https://carono.ru"
+                }
+            ],
+            "description": "Trait for pivoting models",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/carono/yii2-pivot/issues",
+                "source": "https://github.com/carono/yii2-pivot/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2026-01-07T11:33:39+00:00"
+        },
+        {
+            "name": "carono/yii2-pivot-behavior",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/yii2-pivot-behavior.git",
+                "reference": "680792f222182b89b6e627bc11b0f36558f6b190"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/yii2-pivot-behavior/zipball/680792f222182b89b6e627bc11b0f36558f6b190",
+                "reference": "680792f222182b89b6e627bc11b0f36558f6b190",
+                "shasum": ""
+            },
+            "require": {
+                "carono/yii2-pivot": "@stable",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.89.1",
+                "maglnet/composer-require-checker": "^4.7.1",
+                "phpunit/phpunit": "^10.5.46",
+                "rector/rector": "^2.0.16",
+                "roave/infection-static-analysis-plugin": "^1.35",
+                "spatie/phpunit-watcher": "^1.24",
+                "vimeo/psalm": "^5.26.1 || ^6.10.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "carono\\yii2\\behaviors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "https://carono.ru"
+                }
+            ],
+            "description": "_____",
+            "homepage": "https://www.yiiframework.com/",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/carono/yii2-pivot-behavior/issues",
+                "source": "https://github.com/carono/yii2-pivot-behavior/tree/1.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2026-01-22T05:44:19+00:00"
+        },
+        {
+            "name": "carono/yii2-rbac",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/yii2-rbac.git",
+                "reference": "99299a10490fff82999dacbf6368d4964f4d2714"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/yii2-rbac/zipball/99299a10490fff82999dacbf6368d4964f4d2714",
+                "reference": "99299a10490fff82999dacbf6368d4964f4d2714",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || 8.*",
+                "yiisoft/yii2": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "carono\\yii2rbac\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "carono\\yii2rbac\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "https://carono.ru"
+                }
+            ],
+            "description": "Yii2 RBAC extension",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/carono/yii2-rbac/issues",
+                "source": "https://github.com/carono/yii2-rbac/tree/1.3.1"
+            },
+            "time": "2026-05-13T08:45:46+00:00"
+        },
+        {
+            "name": "carono/yii2-url-behavior",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carono/carono-yii2-url-behavior.git",
+                "reference": "606f4037cdec0156a0f792a1581391e171173b97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carono/carono-yii2-url-behavior/zipball/606f4037cdec0156a0f792a1581391e171173b97",
+                "reference": "606f4037cdec0156a0f792a1581391e171173b97",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || 8.*",
+                "yiisoft/yii2": "^2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "carono\\yii2\\behaviors\\": "src",
+                    "carono\\yii2\\behaviors\\components\\": "components"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kasyanov",
+                    "email": "info@carono.ru",
+                    "homepage": "https://carono.ru"
+                }
+            ],
+            "description": "Yii2 behavior and URL rule component for dynamic URL generation based on model, action, user roles, and application context.",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/carono/carono-yii2-url-behavior/issues",
+                "source": "https://github.com/carono/carono-yii2-url-behavior/tree/1.0.2"
+            },
+            "time": "2025-09-16T09:53:29+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -349,6 +883,171 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.19.0"
             },
             "time": "2025-10-17T16:34:55+00:00"
+        },
+        {
+            "name": "nette/php-generator",
+            "version": "v4.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/php-generator.git",
+                "reference": "0d7060926f5c3e8c488b9b9ced42d857f12a34b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/0d7060926f5c3e8c488b9b9ced42d857f12a34b5",
+                "reference": "0d7060926f5c3e8c488b9b9ced42d857f12a34b5",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^4.0.6",
+                "php": "8.1 - 8.5"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "^1.2",
+                "nette/phpstan-rules": "^1.0",
+                "nette/tester": "^2.6",
+                "nikic/php-parser": "^5.0",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1.40@stable",
+                "tracy/tracy": "^2.8"
+            },
+            "suggest": {
+                "nikic/php-parser": "to use ClassType::from(withBodies: true) & ClassType::fromCode()"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 8.5 features.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "code",
+                "nette",
+                "php",
+                "scaffolding"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/php-generator/issues",
+                "source": "https://github.com/nette/php-generator/tree/v4.2.2"
+            },
+            "time": "2026-02-26T00:58:33+00:00"
+        },
+        {
+            "name": "nette/utils",
+            "version": "v4.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "7da6c396d7ebe142bc857c20479d5e70a5e1aac7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/7da6c396d7ebe142bc857c20479d5e70a5e1aac7",
+                "reference": "7da6c396d7ebe142bc857c20479d5e70a5e1aac7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "8.2 - 8.5"
+            },
+            "conflict": {
+                "nette/finder": "<3",
+                "nette/schema": "<1.2.2"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "^1.2",
+                "nette/phpstan-rules": "^1.0",
+                "nette/tester": "^2.5",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1@stable",
+                "tracy/tracy": "^2.9"
+            },
+            "suggest": {
+                "ext-gd": "to use Image",
+                "ext-iconv": "to use Strings::webalize(), toAscii(), chr() and reverse()",
+                "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
+                "ext-json": "to use Nette\\Utils\\Json",
+                "ext-mbstring": "to use Strings::lower() etc...",
+                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "array",
+                "core",
+                "datetime",
+                "images",
+                "json",
+                "nette",
+                "paginator",
+                "password",
+                "slugify",
+                "string",
+                "unicode",
+                "utf-8",
+                "utility",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/utils/issues",
+                "source": "https://github.com/nette/utils/tree/v4.1.4"
+            },
+            "time": "2026-05-11T20:49:54+00:00"
         },
         {
             "name": "psr/container",
@@ -1299,6 +1998,66 @@
                 "source": "https://github.com/twbs/bootstrap/tree/v5.3.8"
             },
             "time": "2025-08-26T02:01:02+00:00"
+        },
+        {
+            "name": "yii2tech/ar-softdelete",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2tech/ar-softdelete.git",
+                "reference": "498ed03f89ded835f0ca156ec50d432191c58769"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2tech/ar-softdelete/zipball/498ed03f89ded835f0ca156ec50d432191c58769",
+                "reference": "498ed03f89ded835f0ca156ec50d432191c58769",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.13"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.27|^5.0|^6.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii2tech\\ar\\softdelete\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "Provides support for ActiveRecord soft delete in Yii2",
+            "keywords": [
+                "active",
+                "delete",
+                "integrity",
+                "record",
+                "smart",
+                "soft",
+                "yii2"
+            ],
+            "support": {
+                "forum": "http://www.yiiframework.com/forum/",
+                "issues": "https://github.com/yii2tech/ar-softdelete/issues",
+                "source": "https://github.com/yii2tech/ar-softdelete",
+                "wiki": "https://github.com/yii2tech/ar-softdelete/wiki"
+            },
+            "abandoned": true,
+            "time": "2019-07-30T11:05:57+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -6426,7 +7185,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.2"
+        "php": ">=8.4"
     },
     "platform-dev": {},
     "plugin-api-version": "2.9.0"
