@@ -78,16 +78,42 @@ class SiteController extends Controller
      */
     public function actionIndex(): string
     {
-        $dataProvider = new \yii\data\ActiveDataProvider([
-            'query' => \app\models\Submission::find()
-                ->orderBy(['score_total' => SORT_DESC, 'submitted_at' => SORT_ASC]),
-            'pagination' => ['pageSize' => 50],
-            'sort' => false,
-        ]);
+        $submissions = \app\models\Submission::find()
+            ->orderBy(['score_total' => SORT_DESC, 'submitted_at' => SORT_ASC])
+            ->limit(200)
+            ->all();
+
+        $maxScore = 0.0;
+        foreach ($submissions as $submission) {
+            $maxScore = max($maxScore, (float) $submission->score_total);
+        }
 
         return $this->render('index', [
-            'dataProvider' => $dataProvider,
+            'submissions' => $submissions,
+            'maxScore' => $maxScore,
         ]);
+    }
+
+    /**
+     * Describes the ten canonical benchmark test cases.
+     *
+     * @return string
+     */
+    public function actionCases(): string
+    {
+        return $this->render('cases', [
+            'cases' => \app\models\BenchmarkCases::all(),
+        ]);
+    }
+
+    /**
+     * Explains how to submit a benchmark run to the leaderboard API.
+     *
+     * @return string
+     */
+    public function actionSubmit(): string
+    {
+        return $this->render('submit');
     }
 
     /**

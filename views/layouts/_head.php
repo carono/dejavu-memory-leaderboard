@@ -5,8 +5,23 @@ declare(strict_types=1);
 /** @var yii\web\View $this */
 
 use app\assets\AppAsset;
+use yii\web\View;
 
 AppAsset::register($this);
+
+// Web fonts: Inter (UI/body) + JetBrains Mono (code/data). Registered before
+// the app bundle so the design system's --font-* tokens resolve on first paint.
+$this->registerLinkTag(['rel' => 'preconnect', 'href' => 'https://fonts.googleapis.com'], 'font-pre-1');
+$this->registerLinkTag(
+    ['rel' => 'preconnect', 'href' => 'https://fonts.gstatic.com', 'crossorigin' => ''],
+    'font-pre-2',
+);
+$this->registerCssFile(
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700'
+        . '&family=JetBrains+Mono:wght@400;500;600&display=swap',
+    ['position' => View::POS_HEAD],
+    'google-fonts',
+);
 
 $this->registerCsrfMetaTags();
 $this->registerMetaTag(

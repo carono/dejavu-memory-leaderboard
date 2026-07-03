@@ -13,24 +13,27 @@ $this->render('_head');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>" class="h-100" data-bs-theme="light">
+<html lang="<?= Yii::$app->language ?>" data-bs-theme="light">
 <head>
     <?php $this->head() ?>
     <title><?= Html::encode($this->title) ?></title>
 </head>
-<body class="d-flex flex-column h-100">
+<body>
 <?php $this->beginBody() ?>
 
 <?= $this->render('_header') ?>
 
-<main id="main" class="flex-grow-1" role="main">
-    <div class="container">
-        <?php if (!empty($this->params['breadcrumbs'])): ?>
-            <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-        <?php endif ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
-    </div>
+<?php $alert = Alert::widget(); ?>
+<main id="main" role="main">
+    <?php if (!empty($this->params['breadcrumbs']) || $alert !== ''): ?>
+        <div class="container">
+            <?php if (!empty($this->params['breadcrumbs'])): ?>
+                <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
+            <?php endif ?>
+            <?= $alert ?>
+        </div>
+    <?php endif ?>
+    <?= $content ?>
 </main>
 
 <?= $this->render('_footer') ?>
