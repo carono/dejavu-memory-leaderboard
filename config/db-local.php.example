@@ -1,0 +1,8 @@
+<?php
+
+// Copy this file to db-local.php and fill in real credentials.
+// db-local.php is gitignored and overrides values from db.php.
+return [
+    'username' => 'dejavu',
+    'password' => 'change-me',
+];
